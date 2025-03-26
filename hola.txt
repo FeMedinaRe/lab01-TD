@@ -1,1 +1,1 @@
-Intento 1 de conflicto
+Intento 2 de conflicto, el primero fallo
