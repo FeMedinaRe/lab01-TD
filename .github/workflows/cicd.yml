@@ -16,3 +16,8 @@ jobs:
           node-version: '20.19.0'
       - run: npm install
       - run: npm start
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
