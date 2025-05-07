@@ -15,7 +15,6 @@ jobs:
         with:
           node-version: '20.19.0'
       - run: cd lab0705
-      - run: npm install
       - run: npm start
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
