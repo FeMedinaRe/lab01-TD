@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-node@v3.9.1
         with:
           node-version: '20.19.0'
-      - run: lab0507
+      - run: cd lab0507
       - run: npm install
       - run: npm start
       - name: deploy
