@@ -1,0 +1,19 @@
+name: deploy to github pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: setup node
+        uses: actions/setup-node@v3.9.1
+        with:
+          node-version: '20.19.0'
+      - run: cd lab0705
+      - run: npm install
+      - run: npm start
